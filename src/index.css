@@ -1,0 +1,267 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ─── Reset & Base ─── */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  cursor: none;
+  scroll-behavior: auto; /* Lenis handles smooth scroll */
+}
+
+body {
+  background-color: #080808;
+  color: #F5F0E8;
+  font-family: 'DM Mono', monospace;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Hide default cursor globally */
+*, *:hover {
+  cursor: none !important;
+}
+
+/* ─── Grain overlay ─── */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='1'/%3E%3C/svg%3E");
+  opacity: 0.035;
+  pointer-events: none;
+  z-index: 9999;
+  mix-blend-mode: overlay;
+}
+
+/* ─── Selection ─── */
+::selection {
+  background: #C8FF4E;
+  color: #080808;
+}
+
+/* ─── Scrollbar ─── */
+::-webkit-scrollbar {
+  width: 3px;
+}
+::-webkit-scrollbar-track {
+  background: #080808;
+}
+::-webkit-scrollbar-thumb {
+  background: #C8FF4E;
+  border-radius: 0;
+}
+
+/* ─── Typography ─── */
+.font-display {
+  font-family: 'Syne', sans-serif;
+  font-weight: 800;
+}
+
+/* ─── Layout ─── */
+.container-main {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 clamp(1.5rem, 5vw, 4rem);
+}
+
+/* ─── Utility: clip-path reveal ─── */
+.clip-reveal {
+  clip-path: inset(0 100% 0 0);
+}
+
+/* ─── Lines ─── */
+.h-line {
+  height: 1px;
+  background: #222222;
+  width: 100%;
+}
+
+/* ─── Custom cursor states ─── */
+.cursor-dot {
+  pointer-events: none;
+  position: fixed;
+  z-index: 99999;
+  mix-blend-mode: difference;
+}
+
+/* ─── Loader ─── */
+#loader {
+  position: fixed;
+  inset: 0;
+  background: #080808;
+  z-index: 99998;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ─── Nav ─── */
+.nav-link {
+  position: relative;
+  font-family: 'DM Mono', monospace;
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #666666;
+  transition: color 0.3s ease;
+  text-decoration: none;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background: #C8FF4E;
+  transition: width 0.35s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+.nav-link:hover {
+  color: #F5F0E8;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+/* ─── Magnetic button ─── */
+.magnetic-btn {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+  will-change: transform;
+}
+
+/* ─── Section headings ─── */
+.section-label {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.7rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #C8FF4E;
+}
+
+/* ─── Project card hover ─── */
+.project-card {
+  border-bottom: 1px solid #222222;
+  transition: border-color 0.3s ease;
+}
+
+.project-card:hover {
+  border-color: #C8FF4E;
+}
+
+.project-card .project-title {
+  transition: color 0.3s ease;
+}
+
+.project-card:hover .project-title {
+  color: #C8FF4E;
+}
+
+/* ─── Marquee ─── */
+@keyframes marquee-ltr {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+@keyframes marquee-rtl {
+  0% { transform: translateX(-50%); }
+  100% { transform: translateX(0); }
+}
+
+.marquee-track-ltr {
+  animation: marquee-ltr 22s linear infinite;
+}
+
+.marquee-track-rtl {
+  animation: marquee-rtl 18s linear infinite;
+}
+
+.marquee-track-ltr:hover,
+.marquee-track-rtl:hover {
+  animation-play-state: paused;
+}
+
+/* ─── About highlight ─── */
+.about-word {
+  display: inline-block;
+  color: #333333;
+  transition: color 0.4s ease;
+}
+
+.about-word.highlighted {
+  color: #F5F0E8;
+}
+
+/* ─── Social link ─── */
+.social-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: 'DM Mono', monospace;
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #666666;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.social-link:hover {
+  color: #C8FF4E;
+}
+
+/* ─── Skill badge ─── */
+.skill-badge {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.7rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 0.4rem 1rem;
+  border: 1px solid #222222;
+  border-radius: 0;
+  color: #666666;
+  white-space: nowrap;
+  transition: all 0.3s ease;
+}
+
+.skill-badge:hover {
+  border-color: #C8FF4E;
+  color: #C8FF4E;
+  background: rgba(200, 255, 78, 0.05);
+}
+
+/* ─── Animated underline on hover ─── */
+.hover-underline {
+  position: relative;
+  text-decoration: none;
+}
+
+.hover-underline::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background: currentColor;
+  transition: width 0.4s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+.hover-underline:hover::after {
+  width: 100%;
+}
