@@ -17,10 +17,7 @@ const C = {
 const Icons = {
   GitHub: <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.379.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.161 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>,
   LinkedIn: <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.225 0z"/></svg>,
-  Email: <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>,
-  Facebook: <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M22.675 0h-21.35C.593 0 0 .593 0 1.325v21.351C0 23.407.593 24 1.325 24H12.82v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116c.73 0 1.323-.593 1.323-1.325V1.325C24 .593 23.407 0 22.675 0z"/></svg>,
-  Instagram: <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.88z"/></svg>,
-  TikTok: <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.95v7.4c-.01 2.98-1.73 5.47-4.46 6.36-2.14.69-4.56.24-6.14-1.34-1.58-1.58-1.99-3.9-1.07-5.96.91-2 2.94-3.32 5.17-3.38.16 0 .32 0 .48.02v4c-.06-.01-.13-.02-.19-.02-1.02.04-1.89.81-2.09 1.8-.21 1 .28 2.05 1.18 2.45.9.4 2.01.12 2.61-.68.61-.81.82-1.85.83-2.86V.02zm0 0"/></svg>
+  Email: <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
 };
 
 // ─── FONTS ─────────────────────────────────────────────────────────────────
@@ -199,26 +196,7 @@ function useReveal(threshold = 0.15) {
   return [ref, vis];
 }
 
-// ─── SKILL BAR ───────────────────────────────────────────────────────────────
-function SkillBar({ label, level, color = C.blue, delay = 0 }) {
-  const [ref, vis] = useReveal();
-  return (
-    <div ref={ref} style={{ marginBottom: 14, opacity: vis ? 1 : 0, transform: vis ? "none" : "translateX(-16px)", transition: `all 0.6s ease ${delay}s` }}>
-      <div style={{ display: "flex", justifyContent: "space-between", marginBottom: 6 }}>
-        <span style={{ fontSize: 13, fontFamily: "'JetBrains Mono',monospace", color: C.text }}>{label}</span>
-        <span style={{ fontSize: 12, color: C.muted }}>{level}%</span>
-      </div>
-      <div style={{ height: 4, background: "rgba(255,255,255,0.06)", borderRadius: 999, overflow: "hidden" }}>
-        <div style={{
-          height: "100%", width: vis ? `${level}%` : "0%", borderRadius: 999,
-          background: `linear-gradient(90deg, ${color}, ${color === C.blue ? C.green : C.blue})`,
-          boxShadow: `0 0 8px ${color}88`,
-          transition: `width 1.2s cubic-bezier(0.4,0,0.2,1) ${delay + 0.1}s`,
-        }} />
-      </div>
-    </div>
-  );
-}
+
 
 // ─── TILT CARD ────────────────────────────────────────────────────────────────
 function TiltCard({ children, style }) {
@@ -326,9 +304,10 @@ function Hero() {
           {/* Typewriter */}
           <div className="fade-up" style={{ fontSize: "clamp(15px,2.2vw,20px)", marginBottom: 36, minHeight: 32, animationDelay: "0.35s" }}>
             <TypeWriter strings={[
+              "Systems & Backend Engineer",
+              "Automation & Workflow Specialist",
+              "Software Quality & Testing Expert",
               "Software Engineering Student @ FAST NUCES",
-              "Backend Architecture Enthusiast",
-              "QA & Bug Hunting Specialist",
             ]} />
           </div>
 
@@ -353,9 +332,6 @@ function Hero() {
             {[
               { href: "https://github.com/mohsinkhandevs", label: "GitHub", icon: Icons.GitHub },
               { href: "https://linkedin.com/in/mohsinkhandevs", label: "LinkedIn", icon: Icons.LinkedIn },
-              { href: "https://www.facebook.com/mohsinkhandevs", label: "Facebook", icon: Icons.Facebook },
-              { href: "https://www.instagram.com/mohsinkhandevs", label: "Instagram", icon: Icons.Instagram },
-              { href: "https://www.tiktok.com/@mohsinkhandevs", label: "TikTok", icon: Icons.TikTok },
               { href: "mailto:mohsinkhan.devs@gmail.com", label: "Email", icon: Icons.Email },
             ].map(s => (
               <a key={s.label} href={s.href} target="_blank" rel="noopener noreferrer" title={s.label}
@@ -395,14 +371,14 @@ function About() {
         {/* Text side */}
         <div ref={ref} style={{ opacity: vis ? 1 : 0, transform: vis ? "none" : "translateX(-24px)", transition: "all 0.8s ease" }}>
           <p style={{ fontSize: 16, lineHeight: 1.85, color: "#b0b8d8", marginBottom: 24 }}>
-            As a dedicated Software Engineering student at <span style={{ color: C.blue, fontWeight: 600 }}>FAST NUCES</span>, I specialize in full-stack web development and backend architecture. I am deeply passionate about engineering robust databases, ensuring software quality, and translating complex Object-Oriented principles into scalable solutions.
+            As a dedicated Software Engineering student at <span style={{ color: C.blue, fontWeight: 600 }}>FAST NUCES</span>, I specialize in systems engineering, backend architecture, and workflow automation. I am deeply passionate about designing high-performance databases, writing scalable logic, and implementing automated testing frameworks.
           </p>
           <p style={{ fontSize: 16, lineHeight: 1.85, color: "#b0b8d8" }}>
-            Driven by a strong desire to solve real-world problems through innovative technology, I am actively seeking a <span style={{ color: C.green, fontWeight: 600 }}>backend or QA internship</span> where I can leverage my expertise in Node.js and Java to contribute to impactful, user-centric engineering projects.
+            Driven by a strong desire to solve real-world problems through automated, high-performance software, I am actively seeking a <span style={{ color: C.green, fontWeight: 600 }}>backend, devops, or QA internship</span> where I can apply my experience in Node.js, databases, and system scripting to build stable, production-ready applications.
           </p>
 
           <div style={{ display: "flex", gap: 12, marginTop: 32, flexWrap: "wrap" }}>
-            {["Node.js", "Java", "MongoDB", "REST APIs"].map(t => (
+            {["Node.js", "Express", "MongoDB", "REST APIs", "Java", "Systems Scripting"].map(t => (
               <span key={t} className="skill-pill">{t}</span>
             ))}
           </div>
@@ -453,41 +429,41 @@ function About() {
 // ─── SKILLS ───────────────────────────────────────────────────────────────────
 const SKILL_GROUPS = [
   {
-    label: "Languages", icon: "⚡", color: C.blue,
-    bars: [{ n: "C++", v: 82 }, { n: "Java", v: 78 }, { n: "JavaScript", v: 88 }, { n: "Python", v: 72 }],
-    pills: [],
+    label: "Languages",
+    icon: "⚡",
+    color: C.blue,
+    items: ["C++", "Java", "JavaScript (ES6+)", "Python", "HTML/CSS"]
   },
   {
-    label: "Backend & Frameworks", icon: "⚙️", color: C.green,
-    bars: [{ n: "Node.js", v: 85 }, { n: "Express.js", v: 82 }],
-    pills: ["REST APIs", "API Design"],
+    label: "Backend & Systems",
+    icon: "⚙️",
+    color: C.green,
+    items: ["Node.js", "Express.js", "REST APIs", "API Design", "Linux Shell"]
   },
   {
-    label: "Frontend & UI", icon: "🎨", color: C.blue,
-    bars: [{ n: "React.js", v: 75 }, { n: "HTML/CSS", v: 88 }],
-    pills: ["JavaFX", "Responsive Design"],
+    label: "Databases",
+    icon: "🗄️",
+    color: C.blue,
+    items: ["MongoDB", "MS SQL Server", "Database Design", "Query Optimization"]
   },
   {
-    label: "Databases", icon: "🗄️", color: C.green,
-    bars: [{ n: "MongoDB", v: 80 }, { n: "MS SQL Server", v: 74 }],
-    pills: [],
+    label: "QA & Testing",
+    icon: "🔍",
+    color: C.green,
+    items: ["Software Quality Assurance", "Edge-Case Testing", "Bug Tracking & Reporting", "Vulnerability Analysis"]
   },
   {
-    label: "Testing & QA", icon: "🔍", color: C.blue,
-    bars: [{ n: "SQA", v: 78 }, { n: "Bug Tracking", v: 85 }],
-    pills: ["Edge Cases", "Vulnerability Analysis"],
-  },
-  {
-    label: "Tools", icon: "🛠", color: C.green,
-    bars: [],
-    pills: ["Git/GitHub", "Chrome Extension APIs", "Linux"],
-  },
+    label: "Tools & DevOps",
+    icon: "🛠️",
+    color: C.blue,
+    items: ["Git & GitHub", "Vercel", "Chrome Extension APIs", "Postman", "Jest (Testing)"]
+  }
 ];
 
 function Skills() {
   return (
     <Section id="skills" style={{ background: "linear-gradient(to bottom, transparent, rgba(0,200,255,0.015), transparent)" }}>
-      <SectionTitle label="// TECHNICAL SKILLS" title="My Toolkit" accent={C.green} />
+      <SectionTitle label="// TECHNICAL SKILLS" title="Skills & Toolkit" accent={C.green} />
       <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))", gap: 24 }}>
         {SKILL_GROUPS.map((g, gi) => {
           const [ref, vis] = useReveal();
@@ -503,12 +479,11 @@ function Skills() {
                 <span style={{ fontSize: 20 }}>{g.icon}</span>
                 <span style={{ fontWeight: 700, fontSize: 14, color: g.color, fontFamily: "'JetBrains Mono',monospace", letterSpacing: 0.5 }}>{g.label}</span>
               </div>
-              {g.bars.map((b, bi) => <SkillBar key={b.n} label={b.n} level={b.v} color={g.color} delay={gi * 0.05 + bi * 0.1} />)}
-              {g.pills.length > 0 && (
-                <div style={{ display: "flex", flexWrap: "wrap", gap: 8, marginTop: g.bars.length > 0 ? 12 : 0 }}>
-                  {g.pills.map(p => <span key={p} className={`skill-pill ${g.color === C.green ? "green" : ""}`}>{p}</span>)}
-                </div>
-              )}
+              <div style={{ display: "flex", flexWrap: "wrap", gap: 8 }}>
+                {g.items.map(item => (
+                  <span key={item} className={`skill-pill ${g.color === C.green ? "green" : ""}`}>{item}</span>
+                ))}
+              </div>
             </div>
           );
         })}
@@ -521,26 +496,26 @@ function Skills() {
 const PROJECTS = [
   {
     id: 1,
-    title: "Google Classroom Downloader",
-    subtitle: "Live Chrome Extension",
-    desc: "A published Chrome extension that automates batch downloads of course materials from Google Classroom. Built robust background downloading scripts and conducted rigorous QA testing to resolve edge cases prior to release.",
-    tech: ["JavaScript", "Chrome Web APIs", "DOM Manipulation", "Extension APIs"],
+    title: "Classroom Pro Downloader",
+    subtitle: "Chrome Extension & Portal",
+    desc: "A browser extension that optimizes student workflows by enabling bulk file downloads from Google Classroom, handling file aggregation and in-browser memory zipping for a seamless UX. Designed a safe CORS-bypass download script and implemented rate-limit retries.",
+    tech: ["JavaScript", "Chrome Web APIs", "Structured Cloning", "Extension APIs"],
     link: "https://classroom.mohsinkhandevs.com/",
-    linkLabel: "View Website & Web Store Link →",
+    linkLabel: "View Live Project Website →",
     accent: C.blue,
     badge: "PUBLISHED",
     icon: "⚡",
   },
   {
     id: 2,
-    title: "Lost and Found System",
-    subtitle: "MERN Stack Application",
-    desc: "A fully functional university web application allowing students and staff to quickly locate missing items. Engineered RESTful APIs for secure inventory creation, updates, and fast database querying.",
-    tech: ["React", "Node.js", "Express.js", "MongoDB"],
-    link: null,
-    linkLabel: null,
+    title: "Lost and Found Portal",
+    subtitle: "Full-Stack Web Application",
+    desc: "A full-stack web application designed for campus utility, featuring real-time reporting, item tracking, and robust API endpoints. Engineered database queries and secure API endpoints to manage inventory workflows. Deployed on Vercel.",
+    tech: ["Node.js", "MongoDB", "React", "Express.js"],
+    link: "https://lostnfound.mohsinkhandevs.com/",
+    linkLabel: "Visit Lost & Found Portal →",
     accent: C.green,
-    badge: "FULL-STACK",
+    badge: "LIVE PORTAL",
     icon: "🔍",
   },
 ];
@@ -688,8 +663,45 @@ function Contact() {
   const [ref, vis] = useReveal();
   const [form, setForm] = useState({ name: "", email: "", message: "" });
   const [sent, setSent] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
   const handle = e => setForm(f => ({ ...f, [e.target.name]: e.target.value }));
-  const submit = () => { setSent(true); setTimeout(() => setSent(false), 3000); };
+  
+  const submit = async () => {
+    if (!form.name || !form.email || !form.message) {
+      alert("Please fill in all fields before sending.");
+      return;
+    }
+    setSubmitting(true);
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify({
+          access_key: "db5b717a-a1d4-4b05-b932-0c2d22cd468d",
+          name: form.name,
+          email: form.email,
+          message: form.message,
+          subject: `Portfolio Contact Form: Message from ${form.name}`,
+        }),
+      });
+
+      const data = await response.json();
+      if (data.success) {
+        setSent(true);
+        setForm({ name: "", email: "", message: "" });
+        setTimeout(() => setSent(false), 4000);
+      } else {
+        alert("Submission failed: " + (data.message || "Please try again."));
+      }
+    } catch (e) {
+      alert("Network error: Could not send your message. Please verify your connection.");
+    } finally {
+      setSubmitting(false);
+    }
+  };
 
   const inputStyle = {
     width: "100%", background: "rgba(255,255,255,0.04)", border: `1px solid ${C.border}`,
@@ -710,12 +722,9 @@ function Contact() {
           </p>
           <div style={{ display: "flex", flexDirection: "column", gap: 16 }}>
             {[
-              { label: "Email", val: "mohsinkhan.devs@gmail.com", href: "mailto:mohsinkhan.devs@gmail.com", icon: Icons.Email },
+              { label: "Email", val: "mohsinkkhan.devs@gmail.com", href: "mailto:mohsinkhan.devs@gmail.com", icon: Icons.Email },
               { label: "GitHub", val: "github.com/mohsinkhandevs", href: "https://github.com/mohsinkhandevs", icon: Icons.GitHub },
               { label: "LinkedIn", val: "linkedin.com/in/mohsinkhandevs", href: "https://linkedin.com/in/mohsinkhandevs", icon: Icons.LinkedIn },
-              { label: "Facebook", val: "facebook.com/mohsinkhandevs", href: "https://www.facebook.com/mohsinkhandevs", icon: Icons.Facebook },
-              { label: "Instagram", val: "instagram.com/mohsinkhandevs", href: "https://www.instagram.com/mohsinkhandevs", icon: Icons.Instagram },
-              { label: "TikTok", val: "tiktok.com/@mohsinkhandevs", href: "https://www.tiktok.com/@mohsinkhandevs", icon: Icons.TikTok },
             ].map(c => (
               <a key={c.label} href={c.href} target="_blank" rel="noopener noreferrer" style={{ display: "flex", gap: 12, alignItems: "center", textDecoration: "none", color: C.muted, transition: "color 0.2s" }}
                 onMouseEnter={e => e.currentTarget.style.color = C.blue}
@@ -733,12 +742,12 @@ function Contact() {
           <input name="name" placeholder="Your Name" value={form.name} onChange={handle} style={inputStyle} />
           <input name="email" placeholder="Your Email" value={form.email} onChange={handle} style={inputStyle} />
           <textarea name="message" placeholder="Tell me about the opportunity..." value={form.message} onChange={handle} rows={5} style={{ ...inputStyle, resize: "none", marginBottom: 20 }} />
-          <button onClick={submit} className="btn-glow" style={{
+          <button onClick={submit} disabled={submitting} className="btn-glow" style={{
             width: "100%", padding: "14px", borderRadius: 10, fontSize: 15,
-            fontWeight: 700, color: C.blue, cursor: "pointer", fontFamily: "'Space Grotesk',sans-serif",
-            position: "relative", zIndex: 1,
+            fontWeight: 700, color: C.blue, cursor: submitting ? "not-allowed" : "pointer", fontFamily: "'Space Grotesk',sans-serif",
+            position: "relative", zIndex: 1, opacity: submitting ? 0.6 : 1,
           }}>
-            {sent ? "✓ Message Sent!" : "Send Message"}
+            {submitting ? "⏳ Sending..." : sent ? "✓ Message Sent!" : "Send Message"}
           </button>
         </div>
       </div>
@@ -754,9 +763,6 @@ function Footer() {
         {[
           { href: "https://github.com/mohsinkhandevs", label: "GitHub", icon: Icons.GitHub },
           { href: "https://linkedin.com/in/mohsinkhandevs", label: "LinkedIn", icon: Icons.LinkedIn },
-          { href: "https://www.facebook.com/mohsinkhandevs", label: "Facebook", icon: Icons.Facebook },
-          { href: "https://www.instagram.com/mohsinkhandevs", label: "Instagram", icon: Icons.Instagram },
-          { href: "https://www.tiktok.com/@mohsinkhandevs", label: "TikTok", icon: Icons.TikTok },
           { href: "mailto:mohsinkhan.devs@gmail.com", label: "Email", icon: Icons.Email },
         ].map(s => (
           <a key={s.label} href={s.href} target="_blank" rel="noopener noreferrer" title={s.label}
