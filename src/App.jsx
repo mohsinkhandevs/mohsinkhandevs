@@ -292,7 +292,7 @@ function Hero() {
           {/* Badge */}
           <div className="mono fade-up" style={{ display: "inline-flex", alignItems: "center", gap: 8, padding: "6px 16px", borderRadius: 999, background: C.blueDim, border: `1px solid ${C.blue}33`, marginBottom: 28, animationDelay: "0.1s" }}>
             <span style={{ width: 7, height: 7, borderRadius: "50%", background: C.green, boxShadow: `0 0 8px ${C.green}` }} />
-            <span style={{ fontSize: 12, color: C.green, letterSpacing: 1 }}>AVAILABLE FOR WORK & FREELANCING</span>
+            <span style={{ fontSize: 12, color: C.green, letterSpacing: 1 }}>AVAILABLE FOR HIRE</span>
           </div>
 
           {/* Name */}
@@ -374,7 +374,7 @@ function About() {
             As a dedicated Software Engineering student at <span style={{ color: C.blue, fontWeight: 600 }}>FAST NUCES</span>, I specialize in systems engineering, backend architecture, and workflow automation. I am deeply passionate about designing high-performance databases, writing scalable logic, and implementing automated testing frameworks.
           </p>
           <p style={{ fontSize: 16, lineHeight: 1.85, color: "#b0b8d8" }}>
-            Driven by a strong desire to solve real-world problems through automated, high-performance software, I am actively available for <span style={{ color: C.green, fontWeight: 600 }}>freelance contracts, backend engineering, and SQA automation roles</span> where I can apply my experience in Node.js, database optimization, and systems scripting to build stable, production-ready applications.
+            Driven by a strong desire to solve real-world problems through automated, high-performance software, I am actively available for <span style={{ color: C.green, fontWeight: 600 }}>professional contracts, backend engineering, and SQA automation roles</span> where I can apply my experience in Node.js, database optimization, and systems scripting to build stable, production-ready applications.
           </p>
 
           <div style={{ display: "flex", gap: 12, marginTop: 32, flexWrap: "wrap" }}>
@@ -718,7 +718,7 @@ function Contact() {
             Let's Build Something <span style={{ color: C.blue }}>Together</span>
           </h2>
           <p style={{ fontSize: 15, lineHeight: 1.8, color: "#94a3c4", marginBottom: 36 }}>
-            I'm actively available for freelance contracts, backend development, and QA engineering opportunities. If you have a project, role, or just want to talk tech, my inbox is always open.
+            I'm actively available for professional contracts, backend development, and QA engineering opportunities. If you have a project, role, or just want to talk tech, my inbox is always open.
           </p>
           <div style={{ display: "flex", flexDirection: "column", gap: 16 }}>
             {[
